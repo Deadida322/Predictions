@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предсказания</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <style>
+        #text_out{
+            position: relative;
+            text-align: center;
+            margin-top: 7%;
+        }
+        button{
+            background-color: rgb(0, 76, 121);
+            height:30px;
+            width: 100px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        button:hover{
+            background-color: rgb(0, 76, 121);
+            height:30px;
+            width: 100px;
+            border-radius: 8px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        H2{
+            margin-top: 5%;
+            font-size: 30px;
+            text-align: center;
+        }
+        .ps{
+            margin-top: 1%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <H2>Предсказания для Даши</H2>
+
+    <div id="text_out">
+        <p id="text_change">Нажми на кнопку, чтобы получить предсказание на день</p>
+       
+        <button onclick="text_out()" class="btn btn-danger">Получить</button>
+    </div>
+    <div class="ps">Не понравилось предсказание? Нажми снова!</div>
+<script>
+    function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    var p;
+    var x;
+    
+    p = document.getElementById('text_change');
+    function text_out(){
+        x = getRandomInt(1,14)
+        if (x == 1) {
+            p.innerHTML = 'Тебя ждёт весёлый день';
+        }
+        if (x == 2) {
+            p.innerHTML = 'Твоё счастья начнётся только к вечеру';
+        }
+        if (x == 3) {
+            p.innerHTML = 'Ты сделаешь 80% своих планов';
+        }
+        if (x == 4) {
+            p.innerHTML = 'Сегодня ты получишь хорошую новость';
+        }
+        if (x == 5) {
+            p.innerHTML = 'Жизнь прекрасно, а Лёня уебан';
+        }
+        if (x == 6) {
+            p.innerHTML = 'Сегодня отличный день для интегралов';
+        }
+        if (x == 7) {
+            p.innerHTML = 'Good day to die';
+        }
+        if (x == 8) {
+            p.innerHTML = 'Солнце светит тем, что ебашит';
+        }
+        if (x == 9) {
+            p.innerHTML = 'Этот день нужно просто пережить. Для этого нужно жить';
+        }
+        if (x == 10) {
+            p.innerHTML = 'Если конец ужасен, значит, это ещё не конец';
+        }
+        if (x == 11) {
+            p.innerHTML = 'Ты переживала любой момент, который с тобой случался, переживёшь и этот';
+        }
+        if (x == 12) {
+            p.innerHTML = 'Рано или поздно всё будет хорошо. Сегодня - рано.';
+        }
+        if (x == 13) {
+            p.innerHTML = 'Тебе стоит больше запланимровать на сегодня, потому что все планы сбудутся';
+        }
+        if (x == 14) {
+            p.innerHTML = 'Делай не так, как правильно, делай так, как прикольно';
+        }
+        if (x == 15) {
+            p.innerHTML = 'Каждая новая сложность на твоё пути - просто один шаг вперёд';
+        }
+        if (x == 16) {
+            p.innerHTML = 'Рождённый ползать никак не может ходить';
+        }
+        if (x == 16) {
+            p.innerHTML = 'То, что не получится у тебя сегодня, обязательно получится завтра';
+        }
+    }
+
+     
+</script>
+</body>
+
+</html>
