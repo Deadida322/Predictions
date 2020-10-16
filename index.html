@@ -69,25 +69,40 @@
             background-image: url(images/8.jpg);
         }
         .photo9{
-            background-image: url(images/10.jpg);
+            height: 180px;
+            background-image: url(images/9.jpg);
         }
         .photo10{
             height: 300px;
-            background-image: url(images/11.jpg);
+            background-image: url(images/10.jpg);
         }
         .photo11{
             height: 300px;
-            background-image: url(images/12.jpg);
+            background-image: url(images/11.jpg);
         }
         .photo12{
-            background-image: url(images/13.jpg);
+            height: 300px;
+            background-image: url(images/12.jpg);
         }
         .photo13{
-            background-image: url(images/14.jpg);
+            background-image: url(images/13.jpg);
         }
         .photo14{
-            height: 180px;
-            background-image: url(images/9.jpg);
+            
+            background-image: url(images/14.jpg);
+        }
+        .photo15{
+            background-image: url(images/15.jpg);
+            height: 400px;
+        }
+        .photo16{
+            background-image: url(images/16.jpg);
+        }
+        .photo17{
+            background-image: url(images/17.jpg);
+        }
+        .photo18{
+            background-image: url(images/18.jpg);
         }
     </style>
 </head>
@@ -95,6 +110,7 @@
     <H2>Предсказания для Даши</H2>
 
     <div id="text_out">
+        <p id="text_change2"></p>
         <p id="text_change">Нажми на кнопку, чтобы получить предсказание на день</p>
        
         <button onclick="text_out()" class="btn btn-danger">Получить</button>
@@ -108,58 +124,121 @@
     var x;
     
     p = document.getElementById('text_change');
+    p2 = document.getElementById('text_change2');
     function text_out(){
-        x = getRandomInt(1,14)
+        x = getRandomInt(1,18)
+        y = getRandomInt(1,18)
+
+        if (y == 1) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo1 photo">';
+        }
+        if (y == 2) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo2 photo">';
+        }
+        if (y == 3) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo3 photo">';
+        }
+        if (y == 4) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo4 photo">';
+        }
+        if (y == 5) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo5 photo">';
+        }
+        if (y == 6) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo6 photo">';
+        }
+        if (y == 7) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo7 photo">';
+        }
+        if (y == 8) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo8 photo">';
+        }
+        if (y == 9) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo9 photo">';
+        }
+        if (y == 10) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo10 photo">';
+        }
+        if (y == 11) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo11 photo">';
+        }
+        if (y == 12) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo12 photo">';
+        }
+        if (y == 13) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo13 photo">';
+        }
+        if (y == 14) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo14 photo">';
+        }
+        if (y == 15) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo15 photo">';
+        }
+        if (y == 16) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo16 photo">';
+        }
+        if (y == 17) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo17 photo">';
+        }
+        if (y == 18) {
+            p2.innerHTML = '<h3>Картинка дня<h3> <div class = "photo18 photo">';
+        }
+
+
+
         if (x == 1) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo1 photo"></div>Тебя ждёт весёлый день';
+            p.innerHTML = 'Тебя ждёт весёлый день';
         }
         if (x == 2) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo2 photo"></div>Твоё счастья начнётся только к вечеру';
+            p.innerHTML = 'Твоё счастья начнётся только к вечеру';
         }
         if (x == 3) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo3 photo"></div>Ты сделаешь 80% своих планов';
+            p.innerHTML = 'Ты сделаешь 80% своих планов';
         }
         if (x == 4) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo2 photo"></div>Сегодня ты получишь хорошую новость';
+            p.innerHTML = 'Сегодня ты получишь хорошую новость';
         }
         if (x == 5) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo4 photo"></div>Жизнь прекрасна, а Лёня уебан';
+            p.innerHTML = 'Жизнь прекрасна, а Лёня уебан';
         }
         if (x == 6) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo5 photo"></div>Сегодня отличный день для интегралов';
+            p.innerHTML = 'Сегодня отличный день для интегралов';
         }
         if (x == 7) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo6 photo"></div>Good day to die';
+            p.innerHTML = 'Good day to die';
         }
         if (x == 8) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo7 photo"></div>Солнце светит тем, кто ебашит';
+            p.innerHTML = 'Солнце светит тем, кто ебашит';
         }
         if (x == 9) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo14 photo"></div>Этот день нужно просто пережить. Для этого нужно жить';
+            p.innerHTML = 'Этот день нужно просто пережить. Для этого нужно жить';
         }
         if (x == 10) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo8 photo"></div>Если конец ужасен, значит, это ещё не конец';
+            p.innerHTML = 'Если конец ужасен, значит, это ещё не конец';
         }
         if (x == 11) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo9 photo"></div>Ты переживала любой момент, который с тобой случался, переживёшь и этот';
+            p.innerHTML = 'Ты переживала любой момент, который с тобой случался, переживёшь и этот';
         }
         if (x == 12) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo11 photo"></div>Рано или поздно всё будет хорошо. Сегодня - рано.';
+            p.innerHTML = 'Рано или поздно всё будет хорошо. Сегодня - рано.';
         }
         if (x == 13) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo11 photo"></div>Тебе стоит больше запланировать на сегодня, потому что все планы сбудутся';
+            p.innerHTML = 'Тебе стоит больше запланировать на сегодня, потому что все планы сбудутся';
         }
         if (x == 14) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo10 photo"></div>Делай не так, как правильно, делай так, как прикольно';
+            p.innerHTML = 'Делай не так, как правильно, делай так, как прикольно';
         }
         if (x == 15) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo12 photo"></div>Каждая новая сложность на твоём пути - просто один шаг вперёд';
+            p.innerHTML = 'Каждая новая сложность на твоём пути - просто один шаг вперёд';
         }
         if (x == 16) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo13 photo"></div>Рождённый ползать никак не может ходить';
+            p.innerHTML = 'Рождённый ползать никак не может ходить';
         }
-        if (x == 16) {
-            p.innerHTML = '<h3>Картинка дня</h3><div class = "photo14 photo"></div>То, что не получится у тебя сегодня, обязательно получится завтра';
+        if (x == 17) {
+            p.innerHTML = 'То, что не получится у тебя сегодня, обязательно получится завтра';
+        }
+        if (x == 18) {
+            p.innerHTML = 'Чтобы быть лучше других, нужно делать больше других';
         }
     }
 
